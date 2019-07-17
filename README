@@ -1,0 +1,30 @@
+gabriel121, hillelkh
+Gabriel Ben Hur (203817614) Hillel Kholmyansky (203283734)
+
+EX: 1
+
+FILES:
+osm.c -- a file with the code implementation of the header file osm.h.
+makefile -- Running make with no arguments will generate the
+            libosm.a library.
+
+
+REMARKS:
+
+
+Assignment 1:
+first, the program creates a directory names "welcome" with mode 0775.
+then it opens another directory named "To" inside the "welcome" directory.
+we return a file descriptor of "Welcome/To/OS2018" with the flags O_WRONLY|O_CREAT|O_TRUNC.
+we get the status of the file.
+
+writes up to 82 bytes from the buffer pointed buf to the file referred to by
+the file descriptor fd = 3.
+
+we used close() that closes  a  file  descriptor, so that it no longer refers to any
+file and may be reused.
+we delete  the name "Welcome/To/OS2018" from the filesystem.
+we delete the directory "Welcome/To/", [which is (as it must be) empty], and "Welcome/".
+we finished by terminating not only the calling thread, but all threads in the calling
+process's thread group.
+
